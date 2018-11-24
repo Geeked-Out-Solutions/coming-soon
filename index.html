@@ -42,7 +42,7 @@
     <script src="scripts/main.js"></script>
     <script type="text/javascript">
     function showBetaPopUp(){
-        require(["mojo/signup-forms/Loader"], function(L) { 
+      window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { 
               L.start({
                 "baseUrl":"mc.us19.list-manage.com",
                 "uuid":"30046f6e99a044a18b2ea7d2c",
@@ -51,8 +51,7 @@
                 }) 
               })
     };
-    document.getElementById("beta-popup”).onclick = function() 
-    {showBetaPopUp()};      
+    document.getElementById("open-popup").onclick = function() {showBetaPopUp()};          
     </script>
   </body>
 </html>
